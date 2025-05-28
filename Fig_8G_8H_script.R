@@ -73,7 +73,7 @@ heat.colors <- colorRampPalette(c("violet", "black", "gold"))(256)
 # z-score
 scale.data <- as.matrix((matrix_heat-apply(matrix_heat,1,mean))/apply(matrix_heat,1,sd))
 
-pdf("FIG_5G.pdf", height=200, width=40)
+pdf("FIG_8G.pdf", height=200, width=40)
 heatmap.2(scale.data,Colv = T,
             dendrogram="both",scale="none",colsep=c(0),
             sepcolor="white",sepwidth=c(0.01),margins = c(13,13),
