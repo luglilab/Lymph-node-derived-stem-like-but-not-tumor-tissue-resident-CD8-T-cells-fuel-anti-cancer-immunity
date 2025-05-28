@@ -1,6 +1,6 @@
 ####################
 ####################
-# FIG_15B script
+# Extended Data FIG_10B script
 ####################
 ####################
 
@@ -168,12 +168,12 @@ mana_cells <- RunUMAP(mana_cells, dims = 1:9)
 p1 <- DimPlot(mana_cells, reduction = "umap", group.by = "RNA_snn_res.0.2", label = TRUE)
 p2 <- DimPlot(mana_cells, reduction = "umap", group.by = "tissue", label = TRUE)
 
-pdf("Fig_15B_Right.pdf")
+pdf("Fig_10B_Right.pdf")
 p1 
 dev.off()
 
 
-pdf("Fig_15B_Left.pdf", width = 23)
+pdf("Fig_10B_Left.pdf", width = 23)
 p2 
 dev.off()
 
